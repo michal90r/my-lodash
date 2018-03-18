@@ -1,0 +1,30 @@
+{
+  "name": "my-lodash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lodash.js",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.17.1"
+  },
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "start": "nodemon --exec npm run babel-node -- ./lodash.js",
+    "build": "babel src -d dist"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
